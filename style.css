@@ -1,0 +1,762 @@
+body {
+	margin: 0px;
+	background-image: url('img/Mozaika_strony.png');
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.LoginContainer{
+	width: 262px;
+	padding: 50px;
+	height: 400px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+h1 {	
+	margin: 0 auto;
+	margin-bottom: -3px;
+	font-size: 15px;
+	color: red;
+	text-align: center;
+}
+
+.logo{
+	width: 262px;
+	height: 253px;
+	margin: 0 auto;
+	background-image: url('img/logo.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+input[type=text],
+input[type=password]{
+	width: 262px;
+	height: 40px;
+	margin-top: 8px;
+	background-color: #e5e3e0;
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 4px;
+	border: 1px solid gray;
+	font-size: 18px;
+	text-indent: 5px;
+	outline: none;
+	
+}
+
+textarea {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	text-indent: 5px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus{
+	background-color: #f7b399;
+	border-color: #db3b02;
+	color: #606060;
+	-webkit-box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.19);
+    box-shadow: 0px 0px 27px -5px rgba(0,0,0,0.19);
+}
+
+.LoginContainer > form > input[type=submit]{
+	font-family: 'Titillium Web', sans-serif;
+	position: absolute;
+	left: 50%;
+	margin-top: 8px;
+	transform: translateX(-50%);
+	padding: 4px;
+	width: 262px;
+	font-size: 25px;
+	font-weight: 500;
+	background-color: #ce2002;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	transition: all 400ms ease;
+}
+.LoginContainer > input[type=submit]:hover{
+	background-color: #db2202;
+}
+
+
+/*loged*/
+
+.logoLoged {
+	height: 100%;
+	float: left;
+	font-size: 30px;
+	font-family: 'Rubik', sans-serif;
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 10px;
+}
+
+.logoLoged > span{
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.logoLoged > span:first-child{
+	font-size: 36px;
+	font-family: 'Rubik', sans-serif;
+}
+.search > input[type=text] {
+	float: left;
+	width: 600px;
+	height: 40px;
+	margin-top: 15px;
+	border-radius: 3px;
+	border: none;
+	text-indent: 15px;
+	font-size: 20px;
+	background-color: #e5e4e3;
+	transition: all 300ms ease;
+}
+
+.search > input[type=text]:focus {
+    background-color: #f7f7f7;
+	-webkit-box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.66);
+    -moz-box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.66);
+    box-shadow: 0px 0px 4px -1px rgba(0,0,0,0.66);
+}	
+.menuBar {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	min-width: 990px;
+	height: 100px;
+	background-color: white;
+	/*border-bottom: 1px solid gray;*/
+	-webkit-box-shadow: 0px -1px 15px 4px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px -1px 15px 4px rgba(0,0,0,0.41);
+    box-shadow: 0px -1px 15px 4px rgba(0,0,0,0.41);
+}
+
+.menuBarBox {
+	float: right;
+	width: 100px;
+	margin-left: 7px;
+	margin-right: 30px;
+	margin-top: 20px;
+	font-size: 22px;
+	font-family: 'Maven Pro', sans-serif;
+	font-weight: 500;
+	color: #999999;
+	text-align: center;
+}
+
+.menuBarBox > div > a{
+	padding: 12px;
+	padding-right: 0px;
+	color: black;
+	text-decoration: none;
+	transition: all 300ms ease;
+}
+
+.menuBarBox > div > a:hover{
+	color: #e22d2d;
+}
+
+.menuBarBox > div:last-child {
+    margin-top: 18px;
+	float: right;
+	margin-right: 7px;
+	width: 23px;
+	height: 23px;
+	background-image: url('img/option.png');
+	background-position: center;
+	background-size: 100% 100%;
+	cursor: pointer;
+	transform: rotate(0deg);
+	transition: all 400ms ease;
+}
+
+.menuBarBox > div:last-child:hover {
+	transform: rotate(-40deg);
+}
+
+.navigation{
+	position: fixed;
+	z-index: 9;
+	left: 0px;
+	height: calc(100vh - 100px);
+	width: 250px;
+	background-color: #edf3fc;
+	-webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.19);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.19);
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.19);
+}
+
+.navBox {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 60px;
+	border-bottom: 1px solid #a8a8a8;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer;
+}
+
+.navBoxFirst {
+	padding-top: 40px;
+}
+
+.navBoxLast {
+    border: none;	
+}
+
+.content {
+	position: fixed;
+	z-index: 7;
+	margin-top: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: calc(100vh - 100px);
+}
+
+.option {
+	position: fixed;
+	z-index: 9;
+	right: 0px;
+	height: calc(100vh - 100px);
+	width: 0px;
+	background-color: #edf3fc;
+	-webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.10);
+}
+
+.option > h2 {
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.optionInfoStatus{
+	width: 100%;
+	height: 45px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.optionInfoStatus > div{
+	width: 40%;
+	margin-left: 5%;
+	margin-right: 5%;
+	height: 42px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 50px;
+	float: left;
+	cursor: pointer;
+}
+
+
+.optionInfoStatus > div:hover {
+	border-bottom: 4px solid gray;
+}
+
+.optionInfoStatus > div:first-child {
+	border-bottom: 4px solid gray;
+}
+
+.optionContainer{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 10px;
+}
+
+.info, .status {
+	width: 100%;
+	height: 100%;
+}
+
+.info > div {
+	
+}
+
+.status {
+	display: none;
+}
+
+.status > div {
+	width: 100%;
+	font-size: 16px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.status > div:first-child {
+	padding-top: 0px;
+}
+
+.status > span {
+	margin-left: 20%;
+	font-size: 17px;
+	display: block;
+}
+
+/*Ad customer container*/
+
+
+.addCustomerContainer {
+	width: 940px;
+	display: none;
+}
+
+.addCustomerContainer > h1, .sendEmails > h1 {
+	font-size: 28px;
+	color: black;
+	padding-bottom: 40px;
+	margin-top: 20px;
+}
+
+.addCustomerContainer > form, .sendEmails > form {
+    background-color: #a9b7ce;
+	border: 1px solid #ddd;
+}
+
+.addCustomerContainer > form > input[type=text], .sendEmails > form > input[type=text]{
+	width: 210px;
+	margin: 16px;
+	border-radius: 2px;
+	background-color: #e5e3e0;
+}
+
+.addCustomerContainer > form > input[type=text]:focus, .sendEmails > form > input[type=text]:focus {
+	background-color: #a0b7db;
+	border-color: #374968;
+}
+
+.addCustomerButton {
+	width: 50px;
+	height: 40px;
+	border-radius: 2px;
+	background-color: #51688e;
+	font-size: 20px;
+	margin: 9px;
+	border: 1px solid #10421d;
+	font-family: 'Titillium Web', sans-serif;
+	padding: 0px;
+	cursor: pointer;
+}
+
+/*Show Base*/
+
+.showBase {
+	display: none;
+	width: 1650px;
+	transform: translateX(200px);
+}
+
+/*send emails*/
+
+.sendEmails {
+	display: none;
+    width: 1120;
+    transform: translateX(100px);
+}
+/*Statistic*/
+
+.statistic{
+	display: none;
+}
+
+/*welcome*/
+
+.welcome {
+	display: none;
+}
+
+.welcome > h1 {
+	font-size: 60px;
+	text-align: center;
+	color: black;
+	padding-top: 40px;
+	
+}
+/*Log*/
+
+.log {
+	position: fixed;
+	z-index: 15;
+	bottom: 0px;
+	left: 0px;
+	background-color: #2e343d;
+	color: white;
+	font-size: 20px;
+	height: 35px;
+	width: 100%;
+	-webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0, 0.2);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0, 0.2);
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0, 0.2);
+}
+
+.topBarLog {
+	width: 100%;
+	background-color: #6c7687;
+	height: 35px;
+	font-size: 23px;
+	color: black;
+	text-indent: 10px;
+	cursor: pointer;
+    
+}
+
+.logStatement {
+    width: 100%;	
+}
+
+.logStatement > div {
+    font-size: 15px;
+    height: 20px;
+	text-indent: 50px;
+	padding-top: 2px;
+}
+
+.logStatement > div:first-child {
+	padding-top: 14px;
+}
+
+.logStatement > div > span {
+	color: red;
+}
+
+.logStatement > div > a {
+	color: green;
+    text-decoration: none;
+}
+
+.logStatement > div > font {
+	font-size: 14px;
+	margin-right: 10px;
+	color: #d1d1d1;
+}
+
+.logStatement > div > font:hover {
+	color: white;
+	font-size: 15px;
+}
+
+/*Tabela pokazująca baze*/
+
+.showBaseTable {
+	height: 68vh;
+	overflow-y: scroll;
+	float: left;
+}
+
+tr > td {
+	padding: 5px;
+	border: 1px solid #ddd;
+	text-indent: 5px;
+	transition: all 230ms ease;
+}
+
+tr > td:hover{
+	background-color: #93a2bc;
+}
+
+tr.noindend > td:last-child {
+	background-color: #3b4e70;
+}
+
+.showBase > .showBaseTable > table,.showBase > table {
+	border-collapse: collapse;
+	background-color: #a9b7ce;
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(214,214,214,1);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(214,214,214,1);
+    box-shadow: 0px 0px 2px 0px rgba(214,214,214,1);
+	margin-right: 15px;
+}
+
+.tabeTitle {
+	font-size: 24px;
+	text-align: center;
+}
+
+td.baseId {
+	text-indent: 0px;
+	width: 28px;
+	text-align: center;
+	cursor: pointer;
+}
+td.name {
+	width: 120px;
+}
+
+td.surname {
+	width: 140px;
+}
+
+td.email {
+	width: 200px;
+}
+
+td.phone {
+	width: 100px;
+}
+
+td.old {
+	width: 30px;
+	text-indent: 0px;
+	text-align: center;
+}
+
+td.address {
+	width: 250px;
+}
+
+td.country {
+	width: 100px;
+}
+
+td > input[type=text], td > input[type=text] {
+	background-color: red;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+	padding: 0px;
+	border: 10px;
+	background-color: #51688e;
+	transition: all 250ms ease;
+}
+
+td > input[type=submit] {
+	border: 0px solid transparent;
+}
+
+td > input[type=text]:hover {
+    background-color: #51688e;
+}	
+td > input[type=text]:focus {
+    background-color: #51688e;
+	color: black;
+}	
+.noindend > td{
+	text-indent: 0px;
+	background-color: #51688e;
+}
+
+.noindend > td:hover {
+	background-color: #4d6287;
+}
+
+td > input {
+	font-size: 18px;
+	text-align: ceter;
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 2px;
+	background-color: #3b4e70;
+	border: 1px solid #445a82;
+	cursor: pointer;
+}
+
+.baseId > input {
+	text-indent: 0px;
+	text-align: center;
+}
+
+/*table option*/
+
+.tableOption {
+	float: left;
+	width: 300px;
+	height: 450px;
+	margin-left: 60px;
+	background-color: #5f708e;
+	border: 1px solid #535e70;
+	border-radius: 2px;
+	text-align: center;
+	-webkit-box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.6);
+    box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.6);
+}
+
+.tableOption > div {
+	height: 210px;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.tableOption > span {
+	width:300px;
+	display: inline-block;
+	margin-top: 50px;
+	font-size: 32px
+}
+
+.tableOption > div > label > input[type=checkbox], .tableOption > div > label > span {
+	float: left;
+	cursor: pointer;
+}
+
+.tableOption > div > label > input[type=checkbox]{
+ 	margin-top: 5px;
+}
+
+.tableOption > input[type=range] {
+	display: inline-block;
+	margin-top: 15px;
+    width: 200px;	
+}
+.tableOption > .tableOptionSubmit {
+	width: 60%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #3b4e70;
+	text-align: center;
+	border: 1px solid #1f2a3d;
+	border-radius: 2px;
+	margin: 0 auto;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.refreshIco {
+	float: right;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	color: black;
+	text-align: center;
+	background-color: #2f3e58;
+	border-left: 1px solid #1f2a3d;
+}
+.refreshIco > a > i {
+	display: block;
+	padding-top: 5px;
+	transform: rotate(0deg);
+	transform: translateX(0px);
+	transition: all 500ms ease;
+	perspective: 200px;
+	color: black;
+}
+
+.refreshIco > a > i:hover {
+	display: block;
+	padding-top: 5px;
+	color: white;
+	transform: rotateY(30deg);
+}
+
+/*Send Emails*/
+
+.sendEmails > form {
+    
+    display: block;
+    border: 0px solid #ddd;
+}
+
+.sendEmails > form > div {
+    float: left;
+    text-align: left;  
+}
+
+.sendEmails > form > div:last-child {
+    
+    width: 300px;
+    height: 402px;
+    background-color: red;
+    margin-left: 30px;
+    background-color: #5f708e;
+    border-radius: 2px;
+    border: 1px solid #535e70;
+    box-shadow: 4px 4px 10px -2px rgba(0,0,0,0.6);
+}
+
+.sendEmails > form > div > input[type=submit] {
+	margin: 16px;
+	width: 90px;	
+}
+
+.sendEmails > form > div > input[type=text] {
+    margin: 16px;
+    border-radius: 2px;
+}
+
+.sendEmails > form > div > input[type=text]:focus, textarea:focus{
+    background-color: #d0d0cd;
+    border: 1px solid #656565;
+    outline: none;
+}
+
+.sendEmails > form > div > input[type=submit]:hover + input:last-child {
+    width: 400px;
+}
+
+textarea {
+	margin: 16px;
+	border-radius: 2px;
+	background-color: #e5e3e0;
+    border-radius: 2px;
+    border: 1px solid gray;
+}
+
+.sendEmails > form > div > h1 {
+    font-size: 26px;
+    color: black;
+    margin: 15px 0px;
+    
+}
+.sendEmails > form > div > input:last-child {
+	width: 0px;
+	background-color: transparent;
+	border: 0px;
+	transition: all 400ms ease;
+	color: #d8624e;
+}
+
+.sendEmails > form > div > span {
+    display: block;
+    margin-left: 30px;
+}
+
+.sendingOption > label {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#sendingMailPerference {
+    height: 0px;
+    overflow: hidden;
+}
+
+#sendingMailPerference > div {
+    text-align: center;
+}
+
+#sendingMailPerference > span {
+    margin-left: 25px;
+}
+
+#sendingMailPerference > div > span {
+     width: 100px;
+     display: inline-block;
+     overflow: hidden;
+}
+
+#sendingMailPerference > div > span:first-child {
+    text-align: right;
+}
+
+#sendingMailPerference > div > span:last-child {
+    text-align: left;
+}
+
+#sendingMailPerference > div > input[type=checkbox] {
+    margin: 7px;
+    margin-top: 0px;
+    transform: translateY(-5px);
+}
